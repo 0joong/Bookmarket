@@ -18,10 +18,10 @@ public class BOJ2798 {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < n; k++){
-                    if((i==j || j == k) || k ==i){
-                        continue;
-                    }
+                    if((i==j || j == k) || k ==i) continue;
+
                     int i1 = card[i] + card[j] + card[k];
+
                     if(i1 >=sum && i1 <=m){
                         sum = i1;
                     }
